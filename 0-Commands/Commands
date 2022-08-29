@@ -1,0 +1,11 @@
+
+
+RACE AROUND CONDITION
+1) To check race around condition :- go run --race . 
+-status code 66 means there race condition exist
+2) & sync.RWmutex -- you can use it to diffrentlty lock read and write opertions
+3) Channels let go-routines(Threads) to communicate each other 
+    myCh <- 5 [means your are inserting a value into channel myCh]
+    <-myCh [means you're getting a value out of channel]
+    <- chan [means the channels is going out]
+    chan<- [means channel is going in and you're not allowed to close in it ]
